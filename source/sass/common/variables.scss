@@ -1,0 +1,46 @@
+// viewport and container
+
+$vp-mobile: 320px;
+$vp-tablet: 768px;
+$vp-desktop: 1366px;
+$container-mobile: 290px;
+$container-tablet: 678px;
+$container-desktop: 1160px;
+
+
+// fonts
+
+$font-primary: "Alumni Sans", sans-serif;
+$font-secondary: "Roboto Condensed", sans-serif;
+
+
+// color base
+
+$color-white: #ffffff;
+$color-primary: #102654;
+
+// color text
+
+$color-text-secondary: #103aae;
+$color-text-gradient: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
+
+// color button
+
+$color-button-secondary: #1c3374;
+$color-button-gradient: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
+$color-button-tabs: #d10a42;
+
+
+// background
+
+$bg-secondary: #f8f9fc;
+$bg-banner: #ed0233;
+$bg-dark-primary: #102654;
+$bg-dark-secondary: #1c3374;
+$bg-gradient-primary: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
+$bg-dark-footer: #030a1a;
+
+
+// form
+
+$form-error: #ff121f;
