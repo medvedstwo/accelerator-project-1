@@ -6,6 +6,7 @@
 // GLOBAL
 
 @import "./common/variables.scss";
+@import "./common/fonts.scss";
 @import "./common/mixins.scss";
 @import "./common/global.scss";
 
@@ -13,3 +14,4 @@
 
 @import "./blocks/hero.scss";
 @import "./blocks/header.scss";
+@import "./blocks/phone.scss";

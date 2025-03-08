@@ -1,5 +1,6 @@
 .hero {
   @include flex(flex-start, center, column);
+  padding-bottom: 32px;
   width: 100%;
   background-image: $bg-gradient-primary;
 }
@@ -8,6 +9,24 @@
   @include flex(space-between, center);
   padding: 16px 0 18px;
   width: $container-mobile;
+}
+
+.hero__content {
+  text-align: right;
+  display: grid;
+  grid-template-columns: 113px 156px;
+  column-gap: 21px;
+}
+
+.hero__list {
+  @include list-reset;
+  font-weight: 400;
+  line-height: 20px;
+  color: $color-white;
+}
+
+.hero__title {
+  @include title(62px, 800, 62px, $color-white, 0.02em);
 }
 
 .hero__img {
