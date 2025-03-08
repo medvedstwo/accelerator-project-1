@@ -10,29 +10,33 @@
 
   <body class="page-body">
     <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+    <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
-    </svg>
+    </svg> -->
     <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">
+    <div class="hero" data-test="hero">
       <header class="header hero__header">
-        <div class="logo header__logo"></div>
-        <adress class="phone">
-          <a href="tel:88005555555">8 800 555-55-55</a>
-        </adress>
-        <div class="header__content">
-          <ul class="header__list">
-            <li class="header__item">Тренажёрный зал</li>
-            <li class="header__item">Групповые занятия</li>
-            <li class="header__item">Кардио-зона</li>
-          </ul>
-          <h1 class="title header__title">
-            <span>Омск</span>
-            Фитнес центр
-          </h1>
-          <a href="#price" class="button"></a>
+        <div class="logo header__logo">
+          <svg>
+            <use href="/__spritemap#sprite-supergym"></use>
+          </svg>
         </div>
+        <address class="phone">
+          <a href="tel:88005555555">8 800 555-55-55</a>
+        </address>
+      </header>
+      <section class="hero__content">
+        <ul class="hero__list">
+          <li class="hero__item">Тренажёрный зал</li>
+          <li class="hero__item">Групповые занятия</li>
+          <li class="hero__item">Кардио-зона</li>
+        </ul>
+        <h1 class="title hero__title">
+          <span>Омск</span>
+          Фитнес центр
+        </h1>
+        <a href="#price" class="button">Купить абонемент</a>
         <div class="hero__img">
           <picture>
             <source type="image/webp" media="(min-width: 1366px)" srcset="img/hero/hero-img.webp 1x, img/hero/hero-img@2x.webp 2x" width="500" height="524">
@@ -41,8 +45,12 @@
             <img src="img/hero/hero-img.png" srcset="img/hero/hero-img@2x.png 2x" width="324" height="390" alt="Фитнес-тренер в футболке Супермена.">
           </picture>
         </div>
-      </header>
+      </section>
     </div>
+    <main></main>
+    <footer>
+
+    </footer>
     <div data-test="about">about</div>
     <div data-test="price">price</div>
     <div data-test="games">games</div>

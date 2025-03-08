@@ -6,3 +6,10 @@
 // GLOBAL
 
 @import "./common/variables.scss";
+@import "./common/mixins.scss";
+@import "./common/global.scss";
+
+// BLOCK
+
+@import "./blocks/hero.scss";
+@import "./blocks/header.scss";

@@ -1,0 +1,15 @@
+.hero {
+  @include flex(flex-start, center, column);
+  width: 100%;
+  background-image: $bg-gradient-primary;
+}
+
+.hero__header {
+  @include flex(space-between, center);
+  padding: 16px 0 18px;
+  width: $container-mobile;
+}
+
+.hero__img {
+  display: none;
+}
