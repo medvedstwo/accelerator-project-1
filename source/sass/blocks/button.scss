@@ -1,0 +1,16 @@
+.button {
+  @include flex(center, center);
+  font-weight: 700;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+
+  &--primary-dark-bg {
+    color: $color-white;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid $color-white;
+  }
+}

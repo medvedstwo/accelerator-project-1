@@ -16,6 +16,14 @@
   display: grid;
   grid-template-columns: 113px 156px;
   column-gap: 21px;
+  row-gap: 48px;
+
+  .button {
+    font-size: 12px;
+    line-height: 12px;
+    grid-column: 1/-1;
+    padding: 22px 0;
+  }
 }
 
 .hero__list {
@@ -23,10 +31,21 @@
   font-weight: 400;
   line-height: 20px;
   color: $color-white;
+  align-self: flex-end
 }
 
 .hero__title {
   @include title(62px, 800, 62px, $color-white, 0.02em);
+  margin: 0;
+
+  span {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0;
+    display: inline-block;
+    margin-bottom: 14px;
+  }
 }
 
 .hero__img {
