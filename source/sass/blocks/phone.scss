@@ -1,7 +1,52 @@
 .phone {
   a {
+    position: relative;
     font-family: $font-secondary;
     font-style: normal;
     text-decoration: none;
+    transition-property: color, opacity;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 100%;
+      height: 1px;
+      background-color: $bg-dark-primary;
+      opacity: 0;
+      transform: translateY(-6px);
+      transition-property: transform, opacity;
+      transition-duration: 300ms;
+      transition-timing-function: ease;
+    }
+
+    &:hover {
+      color: $bg-dark-secondary;
+      opacity: 0.5;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus-visible {
+      color: $bg-dark-secondary;
+    }
+
+    &:active {
+      color: $bg-dark-primary;
+
+      &::after {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    &:disabled {
+      color: $bg-secondary;
+    }
   }
 }
