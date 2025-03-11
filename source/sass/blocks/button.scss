@@ -7,6 +7,10 @@
   border: none;
   background-color: transparent;
 
+  &--round {
+    border-radius: 50%;
+  }
+
   &--primary-dark-bg {
     color: $color-white;
     text-transform: uppercase;
