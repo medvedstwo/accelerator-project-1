@@ -17,7 +17,7 @@
 
 // typography
 
-@mixin title($font-size, $font-weight, $line-height, $color: $color-white, $letter-spacing: 0) {
+@mixin title($font-size, $font-weight, $line-height, $color-white, $letter-spacing: 0) {
   font-family: $font-primary;
   font-size: $font-size;
   font-weight: $font-weight;

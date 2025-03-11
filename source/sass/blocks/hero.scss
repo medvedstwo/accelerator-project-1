@@ -15,7 +15,8 @@
 
 .hero__header {
   @include flex(space-between, center);
-  padding: 16px 0 18px;
+  padding: 13px 0 18px;
+  margin-bottom: 48px;
   width: $container-mobile;
 
   @media (min-width: $vp-tablet) {

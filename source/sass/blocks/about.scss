@@ -1,0 +1,44 @@
+.about {
+  @include flex(flex-start, center, column);
+  gap: 22px;
+  padding: 40px 0;
+}
+
+.about__header {
+  width: $container-mobile;
+}
+
+.about__title {
+  @include title(32px, 600, 32px, $color-primary);
+  text-transform: none;
+  margin: 0 0 12px;
+}
+
+.about__subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0;
+}
+
+.about__content {
+  width: $container-mobile;
+}
+
+.about__video {
+  position: relative;
+
+  iframe {
+    width:100%;
+    height:100%;
+  }
+
+  .about__poster {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+  }
+}
