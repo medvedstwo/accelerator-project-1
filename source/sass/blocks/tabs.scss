@@ -1,0 +1,7 @@
+.tabs__nav {
+  @include list-reset;
+
+  a {
+    text-decoration: none;
+  }
+}
