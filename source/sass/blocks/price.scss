@@ -51,3 +51,9 @@
     }
   }
 }
+
+.price__list {
+  @include list-reset;
+  display: grid;
+  row-gap: 35px;
+}
