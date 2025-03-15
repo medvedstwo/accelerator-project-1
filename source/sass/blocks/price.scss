@@ -3,6 +3,14 @@
   padding: 40px 0;
   background-color: $bg-secondary;
   overflow-x: hidden;
+
+  @media (min-width: $vp-tablet) {
+    padding: 60px 0;
+  }
+
+  @media (min-width: $vp-desktop) {
+    padding: 100px 0;
+  }
 }
 
 .price__wrapper {
@@ -10,6 +18,10 @@
 
   @media (min-width: $vp-tablet) {
     width: 380px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    width: $container-desktop;
   }
 }
 
@@ -23,6 +35,12 @@
     font-size: 42px;
     line-height: 42px;
     margin: 0 0 35px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    font-size: 54px;
+    line-height: 54px;
+    max-width: 0 0 20px;
   }
 }
 
@@ -43,7 +61,12 @@
 
   @media (min-width: $vp-tablet) {
     margin: 0 auto 45px;
-    width: 310px;
+    max-width: 310px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    max-width: 350px;
+    margin: 0 auto 40px;
   }
 }
 
@@ -71,6 +94,11 @@
     font-size: 18px;
     line-height: 18px;
   }
+
+  @media (min-width: $vp-desktop) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .price__list {
@@ -96,6 +124,19 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: 275px 328px;
+    }
+  }
+
+  @media (min-width: $vp-desktop) {
+    grid-template-columns: repeat(3, 360px);
+    column-gap: 40px;
+
+    &::after {
+      width: 321px;
+      height: 384px;
+      bottom: -95px;
+      right: -195px;
+      background-size: 321px 384px;
     }
   }
 }
