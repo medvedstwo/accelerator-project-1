@@ -1,12 +1,25 @@
 .price-card {
   @include flex(center, center, column);
   gap: 18px;
-  padding: 50px 42px;
+  padding: 43px 35px;
   background-color: $color-white;
+  border: 7px solid transparent;
+  cursor: pointer;
+
+  &:hover {
+    border-image: $color-button-gradient;
+    border-image-slice: 1;
+
+    .button--primary-blue-bg {
+      color: $color-white;
+      background-image: $bg-button-play;
+      outline: none;
+    }
+  }
 
   @media (min-width: $vp-tablet) {
     gap: 22px;
-    padding: 65px;
+    padding: 58px;
   }
 
   @media (min-width: $vp-desktop) {
