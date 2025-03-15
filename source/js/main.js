@@ -2,9 +2,8 @@
 // import Swiper from "swiper";
 // import {Navigation, Pagination} from "swiper/modules";
 // import 'swiper/css';
+import initPrice from './utility.js';
 
-const priceElement = document.querySelectorAll('.price-card__description');
-priceElement.forEach((el) => {
-  const priceData = el.textContent;
-  el.dataset.price = priceData;
+document.addEventListener('DOMContentLoaded', () => {
+  initPrice();
 });
