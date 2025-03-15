@@ -6,14 +6,25 @@
   border: 7px solid transparent;
   cursor: pointer;
 
+  &:has(.button--primary-blue-bg:focus-visible) {
+    border-image: $color-button-gradient;
+    border-image-slice: 1;
+  }
+
   &:hover {
     border-image: $color-button-gradient;
     border-image-slice: 1;
+    transition-property: outline, color, background-image;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
 
     .button--primary-blue-bg {
       color: $color-white;
       background-image: $bg-button-play;
       outline: none;
+      transition-property: outline, color, background-image;
+      transition-duration: 300ms;
+      transition-timing-function: ease;
     }
   }
 
