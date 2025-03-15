@@ -2,10 +2,15 @@
   @include flex(flex-start, center, column);
   padding: 40px 0;
   background-color: $bg-secondary;
+  overflow-x: hidden;
 }
 
 .price__wrapper {
   width: $container-mobile;
+
+  @media (min-width: $vp-tablet) {
+    width: 380px;
+  }
 }
 
 .price__title {
@@ -13,6 +18,12 @@
   text-align: center;
   text-transform: none;
   margin: 0 0 30px;
+
+  @media (min-width: $vp-tablet) {
+    font-size: 42px;
+    line-height: 42px;
+    margin: 0 0 35px;
+  }
 }
 
 .price__tabs-nav {
@@ -28,6 +39,11 @@
     right: 0;
     height: 2px;
     background-color: rgba(120, 120, 120, 0.2);
+  }
+
+  @media (min-width: $vp-tablet) {
+    margin: 0 auto 45px;
+    width: 310px;
   }
 }
 
@@ -50,10 +66,36 @@
       background-color: $color-button-tabs;
     }
   }
+
+  @media (min-width: $vp-tablet) {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 .price__list {
   @include list-reset;
   display: grid;
   row-gap: 35px;
+
+  @media (min-width: $vp-tablet) {
+    position: relative;
+    z-index: 2;
+    row-gap: 40px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -40px;
+      right: -55%;
+      z-index: -1;
+      width: 275px;
+      height: 328px;
+      transform: rotate(-210deg);
+      background-image: url("../../img/price/plates.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 275px 328px;
+    }
+  }
 }

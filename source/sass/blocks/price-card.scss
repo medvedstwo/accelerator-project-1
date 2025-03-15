@@ -3,6 +3,11 @@
   gap: 18px;
   padding: 50px 42px;
   background-color: $color-white;
+
+  @media (min-width: $vp-tablet) {
+    gap: 22px;
+    padding: 65px;
+  }
 }
 
 .price-card__title {
@@ -10,10 +15,21 @@
   font-weight: 700;
   line-height: 22px;
   margin: 0;
+
+  @media (min-width: $vp-tablet) {
+    font-size: 24px;
+    line-height: 24px;
+  }
 }
 
 .price-card__subtitle {
   margin: 0 0 48px;
+
+  @media (min-width: $vp-tablet) {
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 60px;
+  }
 }
 
 .price-card__description {
@@ -36,6 +52,7 @@
     font-size: 100px;
     line-height: 150px;
     color: #e8e8e8;
+    opacity: 0.5;
   }
 
   &::after {
@@ -44,6 +61,17 @@
     width: 24px;
     height: 33px;
     mask-image: url("/__spritemap#sprite-ruble-view");
+    mask-repeat: no-repeat;
     background-color: $color-primary;
+  }
+
+  @media (min-width: $vp-tablet) {
+    font-size: 60px;
+    line-height: 90px;
+
+    &::after {
+      width: 30px;
+      height: 42px;
+    }
   }
 }

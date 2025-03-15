@@ -5,3 +5,11 @@
     text-decoration: none;
   }
 }
+
+.tabs__content {
+  display: none;
+
+  &.tabs__content--active {
+    display: block;
+  }
+}
