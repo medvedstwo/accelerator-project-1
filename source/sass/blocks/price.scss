@@ -77,8 +77,21 @@
   color: rgba(16, 38, 84, 0.5);
   position: relative;
 
+  &:hover {
+    color: rgba(16, 38, 84, 0.7);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    color: rgba(16, 38, 84, 1);
+  }
+
   &--active {
     color: $color-primary;
+
     &::after {
       content: "";
       position: absolute;
@@ -88,6 +101,10 @@
       height: 2px;
       background-color: $color-button-tabs;
     }
+  }
+
+  &:disabled {
+    opacity: 0.3;
   }
 
   @media (min-width: $vp-tablet) {
