@@ -5,6 +5,10 @@
   @media (min-width: $vp-tablet) {
     padding: 60px 0;
   }
+
+  @media (min-width: $vp-desktop) {
+    padding: 100px 0;
+  }
 }
 
 .games__wrapper {
@@ -14,6 +18,11 @@
   @media (min-width: $vp-tablet) {
     grid-template-columns: 300px 378px;
     width: $container-tablet;
+  }
+
+  @media (min-width: $vp-desktop) {
+    grid-template-columns: 500px 660px;
+    width: $container-desktop;
   }
 }
 
@@ -31,11 +40,23 @@
     column-gap: 20px;
     row-gap: 10px;
   }
+
+  @media (min-width: $vp-desktop) {
+    grid-template-columns: 168px 95px;
+    column-gap: 77px;
+    row-gap: 30px;
+    padding: 60px 80px;
+  }
 }
 
 .games__title {
   @include title(48px, 600, 54px, $color-white);
   margin: 0;
+
+  @media (min-width: $vp-desktop) {
+    font-size: 82px;
+    line-height: 96px;
+  }
 }
 
 .games__schedule {
@@ -45,6 +66,10 @@
 
     @media (min-width: $vp-tablet) {
       row-gap: 10px;
+    }
+
+    @media (min-width: $vp-desktop) {
+      row-gap: 20px;
     }
   }
 }
@@ -56,6 +81,10 @@
 
   @media (min-width: $vp-tablet) {
     row-gap: 4px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    row-gap: 12px;
   }
 }
 
@@ -79,6 +108,14 @@
   @media (min-width: $vp-tablet) {
     font-size: 18px;
     line-height: 24px;
+
+    &::after {
+      bottom: -4px;
+    }
+  }
+
+  @media (min-width: $vp-desktop) {
+    bottom: -6px;
   }
 }
 
@@ -91,6 +128,10 @@
   @media (min-width: $vp-tablet) {
     column-gap: 10px;
   }
+
+  @media (min-width: $vp-desktop) {
+    column-gap: 2px;
+  }
 }
 
 .games__date-number {
@@ -99,6 +140,11 @@
   line-height: 24px;
   margin: 0;
   width: fit-content;
+
+  @media (min-width: $vp-desktop) {
+    font-size: 40px;
+    line-height: 40px;
+  }
 }
 
 .games__date-mounth {
@@ -124,6 +170,11 @@
   line-height: 24px;
   margin: 0;
   width: fit-content;
+
+  @media (min-width: $vp-desktop) {
+    font-size: 40px;
+    line-height: 40px;
+  }
 }
 
 .games__description {
@@ -143,4 +194,9 @@
   line-height: 12px;
   grid-column: 1/-1;
   padding: 22px 0;
+  height: fit-content;
+
+  @media (min-width: $vp-desktop) {
+    padding: 27px 0;
+  }
 }
