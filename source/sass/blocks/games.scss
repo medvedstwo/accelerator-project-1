@@ -1,5 +1,6 @@
 .games {
   @include flex(flex-start, center, column);
+
   padding: 25px 0;
 
   @media (min-width: $vp-tablet) {
@@ -51,6 +52,7 @@
 
 .games__title {
   @include title(48px, 600, 54px, $color-white);
+
   margin: 0;
 
   @media (min-width: $vp-desktop) {
@@ -149,6 +151,7 @@
 
 .games__date-mounth {
   @include flex(flex-start, flex-start, column);
+
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
@@ -164,6 +167,7 @@
     line-height: 22px;
   }
 }
+
 .games__time-number {
   font-size: 24px;
   font-weight: 700;

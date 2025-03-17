@@ -2,26 +2,27 @@
 // ---------------------------------
 
 @import "vendor/normalize";
-@import "./vendor/swiper.scss";
+@import "./vendor/swiper";
 
 // GLOBAL
 
-@import "./common/variables.scss";
-@import "./common/fonts.scss";
-@import "./common/mixins.scss";
-@import "./common/global.scss";
-@import "./common/utility.scss";
+@import "./common/variables";
+@import "./common/fonts";
+@import "./common/mixins";
+@import "./common/global";
+@import "./common/utility";
 
 // BLOCK
 
-@import "./blocks/hero.scss";
-@import "./blocks/header.scss";
-@import "./blocks/phone.scss";
-@import "./blocks/button.scss";
-@import "./blocks/about.scss";
-@import "./blocks/tabs.scss";
-@import "./blocks/price.scss";
-@import "./blocks/price-card.scss";
-@import "./blocks/games.scss";
-@import "./blocks/juri.scss";
+@import "./blocks/hero";
+@import "./blocks/header";
+@import "./blocks/phone";
+@import "./blocks/button";
+@import "./blocks/about";
+@import "./blocks/tabs";
+@import "./blocks/price";
+@import "./blocks/price-card";
+@import "./blocks/games";
+@import "./blocks/juri";
+@import "./blocks/juri-card";
 

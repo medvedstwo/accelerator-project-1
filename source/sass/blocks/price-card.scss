@@ -1,10 +1,10 @@
 .price-card {
   @include flex(center, center, column);
+
   gap: 18px;
   padding: 43px 35px;
   background-color: $color-white;
   border: 7px solid transparent;
-  cursor: pointer;
 
   &:has(.button--primary-blue-bg:focus-visible) {
     border-image: $color-button-gradient;
@@ -67,6 +67,7 @@
 
 .price-card__description {
   @include flex(center, center);
+
   z-index: 2;
   font-size: 48px;
   font-weight: 700;
