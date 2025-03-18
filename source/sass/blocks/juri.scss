@@ -2,10 +2,26 @@
   @include flex(center, flex-start column);
 
   padding: 40px 0;
+
+  @media (min-width: $vp-tablet) {
+    padding: 30px 0 60px;
+  }
 }
 
 .juri__wrapper {
   width: 260px;
+
+  @media (min-width: $vp-tablet) {
+    width: $container-tablet;
+  }
+
+  @media (min-width: $vp-desktop) {
+    width: $container-desktop;
+  }
+}
+
+.juri__wrapper-swiper {
+  position: relative;
 }
 
 .juri__title {
@@ -14,4 +30,10 @@
   text-align: center;
   text-transform: none;
   margin: 0 0 20px;
+
+  @media (min-width: $vp-tablet) {
+    font-size: 54px;
+    line-height: 64px;
+    margin: 0 0 46px;
+  }
 }
