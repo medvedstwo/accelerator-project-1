@@ -1,5 +1,5 @@
 .juri {
-  @include flex(center, flex-start column);
+  @include flex(flex-start, center, column);
 
   padding: 40px 0;
 
