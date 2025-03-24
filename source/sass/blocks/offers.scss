@@ -52,6 +52,7 @@
 
 .offers__content {
   @include flex(flex-start, center, column);
+
   color: $color-white;
   margin: 0 0 40px;
   background-color: $bg-banner;
@@ -101,6 +102,7 @@
 
   @media (min-width: $vp-tablet) {
     @include flex(flex-start, flex-start, column);
+
     text-align: left;
     align-self: flex-start;
     padding: 40px 25px 46px;
@@ -178,6 +180,7 @@
 
 .offers__img {
   @include flex(flex-start, center, column);
+
   padding: 0;
   width: 100%;
   height: auto;
@@ -194,6 +197,7 @@
 
   ul {
     @include list-reset;
+
     display: grid;
     row-gap: 30px;
 
@@ -203,6 +207,7 @@
 
   li {
     @include flex(flex-start, center, column);
+
     gap: 20px;
     padding: 20px 20px 26px;
     border: 7px solid transparent;
