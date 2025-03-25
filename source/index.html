@@ -823,41 +823,45 @@
           <div class="swiper-button-next"></div>
         </div>
       </section>
-      <section class="form contacts" data-test="form">
-        <div class="form__wrapper">
-          <h2 class="form__title">Бесплатное занятие</h2>
-          <form action="https://echo.htmlacademy.ru/" method="post">
-            <label>
-              <input type="text" name="name" placeholder="Имя" required>
-            </label>
-            <label>
-              <input type="email" name="tel" placeholder="Телефон" required>
-            </label>
-            <button type="submit">Отправить</button>
-          </form>
-        </div>
-        <div class="contacts__wrapper">
-          <h2 class="contacts__title">Контакты</h2>
-          <address class="contacts__list">
-            <div class="contacts__item">
-              <h3>Адрес:</h3>
-              <p>г. Омск, ул. 60 лет Октября, 7</p>
-            </div>
-            <div class="contacts__item">
-              <h3>График работы:</h3>
-              <p>Пн-Вс: с 8:00 до 22:00</p>
-            </div>
-            <div class="contacts__item">
-              <h3>Телефон:</h3>
-              <a href="tel:88005555555">8 800 555-55-55</a>
-            </div>
-            <div class="contacts__item">
-              <h3>Email:</h3>
-              <a href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
-            </div>
-          </address>
-        </div>
-      </section>
+      <div class="page-wrapper" data-test="form">
+        <section class="form">
+          <div class="form__wrapper">
+            <h2 class="form__title">Бесплатное занятие</h2>
+            <form class="form__inner" action="https://echo.htmlacademy.ru/" method="post">
+              <label>
+                <input class="form__input" type="text" name="name" placeholder="Имя" required>
+              </label>
+              <label>
+                <input class="form__input" type="email" name="tel" placeholder="Телефон" required>
+              </label>
+              <button class="button button--primary-dark-bg form__button" type="submit">Отправить</button>
+            </form>
+          </div>
+        </section>
+        <section class="contacts">
+          <div class="contacts__wrapper">
+            <h2 class="contacts__title">Контакты</h2>
+            <address class="contacts__list">
+              <div class="contacts__item">
+                <h3>Адрес:</h3>
+                <p>г. Омск, ул. 60 лет Октября, 7</p>
+              </div>
+              <div class="contacts__item">
+                <h3>График работы:</h3>
+                <p>Пн-Вс: с 8:00 до 22:00</p>
+              </div>
+              <div class="contacts__item">
+                <h3>Телефон:</h3>
+                <a href="tel:88005555555">8 800 555-55-55</a>
+              </div>
+              <div class="contacts__item">
+                <h3>Email:</h3>
+                <a href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
+              </div>
+            </address>
+          </div>
+        </section>
+      </div>
     </main>
     <footer class="footer" data-test="footer">
       <div class="footer__wrapper">

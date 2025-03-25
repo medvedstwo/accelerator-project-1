@@ -1,0 +1,8 @@
+.page-wrapper {
+  @include flex(flex-start, center, column);
+
+  @media (min-width: $vp-desktop) {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+  }
+}
