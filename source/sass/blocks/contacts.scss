@@ -45,6 +45,7 @@
 }
 
 .contacts__list {
+  position: relative;
   display: grid;
   row-gap: 28px;
 
@@ -52,6 +53,17 @@
     grid-template-columns: repeat(2, 190px);
     column-gap: 60px;
     row-gap: 15px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      width: 1px;
+      background-color: #74819c;
+    }
   }
 
   @media (min-width: $vp-desktop) {

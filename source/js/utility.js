@@ -1,4 +1,4 @@
-const initPrice = () => {
+const initPriceData = () => {
   const priceElement = document.querySelectorAll('.price-card__description');
   priceElement.forEach((el) => {
     const priceData = el.textContent;
@@ -6,4 +6,4 @@ const initPrice = () => {
   });
 };
 
-export default initPrice;
+export default initPriceData;
