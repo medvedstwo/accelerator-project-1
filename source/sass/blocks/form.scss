@@ -1,5 +1,6 @@
 .form {
   @include flex(flex-start, center, column);
+
   padding: 70px 0;
   width: 100%;
   background-color: $bg-dark-primary;
@@ -16,6 +17,7 @@
 
 .form__wrapper {
   @include flex(flex-start, flex-start, column);
+
   gap: 36px;
   width: $container-mobile;
 
@@ -30,6 +32,7 @@
 
 .form__title {
   @include title(32px, 600, 32px, $color-white);
+
   text-transform: none;
   margin: 0;
 
@@ -57,6 +60,7 @@
 
 .form__input {
   @include flex(flex-start, center);
+
   font-size: 14px;
   font-weight: 400;
   line-height: 22px;

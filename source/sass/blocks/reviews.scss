@@ -26,6 +26,7 @@
 
 .reviews__title {
   @include title(32px, 600, 32px, $color-primary);
+
   text-align: center;
   text-transform: none;
   margin: 0 0 40px;
@@ -40,5 +41,4 @@
     margin: 0 0 75px;
   }
 }
-
 
