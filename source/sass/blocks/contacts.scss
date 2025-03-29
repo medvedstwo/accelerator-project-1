@@ -1,7 +1,7 @@
 .contacts {
   @include flex(flex-start, center, column);
 
-  padding: 40px 0;
+  padding: 37px 0 30px;
 
   @media (min-width: $vp-tablet) {
     padding: 60px 0;
@@ -30,7 +30,7 @@
   @include title(32px, 600, 32px, $color-primary);
 
   text-transform: none;
-  margin: 0 0 42px;
+  margin: 0 0 37px;
 
   @media (min-width: $vp-tablet) {
     font-size: 52px;
@@ -41,6 +41,7 @@
 
   @media (min-width: $vp-desktop) {
     text-align: left;
+    letter-spacing: 0.02em;
   }
 }
 
