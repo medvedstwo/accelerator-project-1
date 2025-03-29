@@ -17,8 +17,8 @@
 .hero__header {
   @include flex(space-between, center);
 
-  padding: 13px 0 18px;
-  margin-bottom: 48px;
+  padding: 16px 0;
+  margin-bottom: 46px;
   width: $container-mobile;
 
   @media (min-width: $vp-tablet) {
@@ -47,7 +47,7 @@
   @media (min-width: $vp-desktop) {
     grid-template-columns: 385px 500px;
     column-gap: 56px;
-    justify-content: end;
+    justify-content: center;
     width: $container-desktop;
   }
 }
@@ -101,7 +101,7 @@
 }
 
 .hero__title {
-  @include title(62px, 800, 62px, $color-white, 0.02em);
+  @include title(62px, 800, 62px, $color-white, 1px);
 
   margin: 0;
 
