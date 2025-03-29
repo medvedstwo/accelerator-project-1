@@ -6,7 +6,7 @@
   overflow-x: hidden;
 
   @media (min-width: $vp-tablet) {
-    padding: 60px 0;
+    padding: 61px 0;
   }
 
   @media (min-width: $vp-desktop) {
@@ -42,7 +42,7 @@
   @media (min-width: $vp-desktop) {
     font-size: 54px;
     line-height: 54px;
-    max-width: 0 0 20px;
+    margin: 0 0 20px;
   }
 }
 
@@ -56,20 +56,20 @@
     content: "";
     position: absolute;
     left: 0;
-    bottom: -10px;
+    bottom: -9px;
     right: 0;
     height: 2px;
     background-color: rgba(120, 120, 120, 0.2);
   }
 
   @media (min-width: $vp-tablet) {
-    margin: 0 auto 45px;
+    margin: 0 auto 54px;
     max-width: 310px;
   }
 
   @media (min-width: $vp-desktop) {
     max-width: 350px;
-    margin: 0 auto 40px;
+    margin: 0 auto 50px;
   }
 }
 
@@ -99,7 +99,7 @@
       content: "";
       position: absolute;
       left: 0;
-      bottom: -10px;
+      bottom: -9px;
       right: 0;
       height: 2px;
       background-color: $color-button-tabs;
@@ -135,7 +135,7 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: -40px;
+      bottom: -48px;
       right: -55%;
       z-index: -1;
       width: 275px;
