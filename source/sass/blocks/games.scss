@@ -112,7 +112,7 @@
     line-height: 24px;
 
     &::after {
-      bottom: -4px;
+      bottom: -2px;
     }
   }
 
@@ -128,7 +128,7 @@
   column-gap: 3px;
 
   @media (min-width: $vp-tablet) {
-    column-gap: 10px;
+    column-gap: 6px;
   }
 
   @media (min-width: $vp-desktop) {
@@ -199,6 +199,10 @@
   grid-column: 1/-1;
   padding: 22px 0;
   height: fit-content;
+
+  @media (min-width: $vp-tablet) {
+    padding: 25px 0;
+  }
 
   @media (min-width: $vp-desktop) {
     padding: 27px 0;
