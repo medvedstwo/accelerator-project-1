@@ -22,7 +22,8 @@
   width: $container-mobile;
 
   @media (min-width: $vp-tablet) {
-    padding: 31px 0;
+    padding: 29px 0;
+    margin-bottom: 0;
     width: $container-tablet;
   }
 
@@ -74,6 +75,7 @@
     height: fit-content;
 
     .button {
+      padding: 20px 0;
       grid-column: 2/3;
     }
   }
