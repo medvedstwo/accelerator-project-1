@@ -3,9 +3,9 @@
 
   padding: 40px 0;
   background-color: $bg-secondary;
-  overflow-x: hidden;
 
   @media (min-width: $vp-tablet) {
+    overflow: clip;
     padding: 61px 0;
   }
 
