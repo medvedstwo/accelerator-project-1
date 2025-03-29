@@ -5,6 +5,7 @@
   padding: 40px 0;
 
   @media (min-width: $vp-tablet) {
+    gap: 20px;
     padding: 60px 0 120px;
   }
 
@@ -28,6 +29,7 @@
 
   @media (min-width: $vp-desktop) {
     text-align: left;
+    align-self: flex-start;
     width: auto;
   }
 }
@@ -90,14 +92,19 @@
   @media (min-width: $vp-desktop) {
     text-align: left;
     grid-column: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: flex-start;
     width: auto;
+    height: 100%;
 
     p {
       margin: 0;
 
       &:last-child {
         display: block;
-        margin: 0;
+        margin: 0 0 2px;
       }
     }
   }
@@ -143,13 +150,13 @@
   @media (min-width: $vp-tablet) {
     position: absolute;
     left: 50%;
-    bottom: -45px;
+    bottom: -85px;
     transform: translateX(-50%);
     width: 270px;
   }
 
   @media (min-width: $vp-desktop) {
-    left: 100px;
+    left: 80px;
     bottom: -115px;
     width: 360px;
     height: 230px;
