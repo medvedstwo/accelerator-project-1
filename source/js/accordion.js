@@ -1,8 +1,8 @@
-const accordion = document.querySelector('.faq__list');
+const accordion = document.querySelector('.faq-tabs__content-wrapper');
 const accordionBtns = accordion.querySelectorAll('.faq__button');
 const accordionAnswers = accordion.querySelectorAll('.faq__answer');
 
-const initAccordin = () => {
+const initAccordion = () => {
   accordionBtns.forEach.call(accordionBtns, (accordionBtn) => {
     accordionBtn.addEventListener('click', () => {
       const clickedAnswer = accordionBtn.parentElement.parentElement.querySelector('.faq__answer');
@@ -24,5 +24,5 @@ const initAccordin = () => {
   });
 };
 
-export default initAccordin;
+export default initAccordion;
 

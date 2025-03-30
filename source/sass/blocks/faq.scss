@@ -90,6 +90,7 @@
 .faq__button {
   position: relative;
   padding: 8px;
+  cursor: pointer;
 
   @include flex(center, center);
 
