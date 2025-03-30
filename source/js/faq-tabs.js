@@ -1,5 +1,3 @@
-import initAccordion from "./accordion";
-
 const tabLinks = document.querySelectorAll('.faq-tabs__button');
 const tabContents = document.querySelectorAll('.faq-tabs__content');
 

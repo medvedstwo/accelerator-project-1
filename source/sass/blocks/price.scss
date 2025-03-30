@@ -93,20 +93,6 @@
     color: rgba(16, 38, 84, 1);
   }
 
-  &--active {
-    color: $color-primary;
-
-    &::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -9px;
-      right: 0;
-      height: 2px;
-      background-color: $color-button-tabs;
-    }
-  }
-
   &:disabled {
     opacity: 0.3;
   }
@@ -119,6 +105,20 @@
   @media (min-width: $vp-desktop) {
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+.price__tabs-button--active {
+  color: $color-primary;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -9px;
+    right: 0;
+    height: 2px;
+    background-color: $color-button-tabs;
   }
 }
 

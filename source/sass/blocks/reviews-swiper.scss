@@ -14,7 +14,7 @@
   padding: 30px 25px;
   color: $color-white;
   background-color: $bg-dark-secondary;
-  box-shadow: 0 0 40px 0 #1c337433;
+  box-shadow: 0 0 40px 0 rgba(28, 51, 116, 0.2);
 
   @media (min-width: $vp-tablet) {
     padding: 40px 30px;

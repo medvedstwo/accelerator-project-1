@@ -7,6 +7,16 @@
     <meta name="description" content="Фитнес-центр в Омске">
     <meta name="keywords" content="Фитнес-центр, Фитнес-тренер, Омск">
     <title>SUPERGYM</title>
+    <link rel="preload" href="fonts/AlumniSans-ExtraBold.woff" type="font/woff" as="font" crossorigin>
+    <link rel="preload" href="fonts/AlumniSans-ExtraBold.woff2" type="font/woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/AlumniSans-SemiBold.woff" type="font/woff" as="font" crossorigin>
+    <link rel="preload" href="fonts/AlumniSans-SemiBold.woff2" type="font/woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/Roboto-Condensed-Bold.woff" type="font/woff" as="font" crossorigin>
+    <link rel="preload" href="fonts/Roboto-Condensed-Bold.woff2" type="font/woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/Roboto-Condensed-Light.woff" type="font/woff" as="font" crossorigin>
+    <link rel="preload" href="fonts/Roboto-Condensed-Light.woff2" type="font/woff2" as="font" crossorigin>
+    <link rel="preload" href="fonts/Roboto-Condensed-Regular.woff" type="font/woff" as="font" crossorigin>
+    <link rel="preload" href="fonts/Roboto-Condensed-Regular.woff2" type="font/woff2" as="font" crossorigin>
     <link rel="stylesheet" href="sass/style.scss">
   </head>
 
@@ -67,7 +77,7 @@
             </picture>
           </div>
           <div class="about__video">
-            <iframe src="https://www.youtube.com/embed/9TZXsZItgdw?si=4LgON8SaoyliNZGz" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+            <iframe src="https://www.youtube.com/embed/9TZXsZItgdw?si=4LgON8SaoyliNZGz&autoplay=1" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
             <div class="about__poster">
               <picture>
                 <source type="image/webp" media="(min-width: 1366px)" srcset="img/about/about-video-desktop@1x.webp 1x, img/about/about-video-desktop@2x.webp 2x" width="360" height="230">
@@ -81,9 +91,6 @@
             <button class="button button--round about__video-button" type="button">
               <span class="visually-hidden">Запустить видео.</span>
               <span class="about__video-icon">
-                <svg>
-                  <use href="/__spritemap#sprite-play"></use>
-                </svg>
               </span>
             </button>
           </div>
@@ -409,14 +416,14 @@
                 </div>
               </div>
             </div>
-            <div class="swiper-button-prev juri-swiper__button juri-swiper__button--prev">
+            <div class="swiper-button-prev juri-swiper__button juri-swiper__button--prev" tabindex="1">
               <div class="juri-swiper__icon">
                 <svg>
                   <use href="/__spritemap#sprite-arrow"></use>
                 </svg>
               </div>
             </div>
-            <div class="swiper-button-next juri-swiper__button juri-swiper__button--next">
+            <div class="swiper-button-next juri-swiper__button juri-swiper__button--next" tabindex="1">
               <div class="juri-swiper__icon">
                 <svg>
                   <use href="/__spritemap#sprite-arrow"></use>
@@ -804,7 +811,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide reviews-swiper__slide">
                 <div class="reviews-swiper__content">
                   <div class="reviews-swiper__img">
                     <picture>
@@ -814,11 +821,13 @@
                   </div>
                   <div class="reviews-swiper__text">
                     <h3>Анна Орлова</h3>
-                    <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный.&nbsp;Зал просторный, даже в вечернее время нет&nbsp;очередей»</p>
+                    <blockquote>
+                      <p>«Хожу в Supergym уже больше года. Нравится, что&nbsp;в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал&nbsp;просторный, даже в&nbsp;вечернее время нет&nbsp;очередей»</p>
+                    </blockquote>
                   </div>
                 </div>
               </div>
-              <div class="swiper-slide">
+              <div class="swiper-slide reviews-swiper__slide">
                 <div class="reviews-swiper__content">
                   <div class="reviews-swiper__img">
                     <picture>
@@ -826,8 +835,12 @@
                       <img src="img/reviews/review-1.jpg" alt="Фотография Анны Орловой." width="482" height="671">
                     </picture>
                   </div>
-                  <h3>Анна Орлова</h3>
-                  <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                  <div class="reviews-swiper__text">
+                    <h3>Анна Орлова</h3>
+                    <blockquote>
+                      <p>«Хожу в Supergym уже больше года. Нравится, что&nbsp;в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал&nbsp;просторный, даже в&nbsp;вечернее время нет&nbsp;очередей»</p>
+                    </blockquote>
+                  </div>
                 </div>
               </div>
             </div>
@@ -905,17 +918,17 @@
         <div class="social">
           <ul class="social__list">
             <li class="social__item">
-              <a href="" class="social__link social__link--vk">
+              <a href="#" class="social__link social__link--vk">
                 <span class="visually-hidden">Группа в ВК.</span>
               </a>
             </li>
             <li class="social__item">
-              <a href="" class="social__link social__link--ok">
+              <a href="#" class="social__link social__link--ok">
                 <span class="visually-hidden">Группа в Одноклассниках.</span>
               </a>
             </li>
             <li class="social__item">
-              <a href="" class="social__link social__link--reddit">
+              <a href="#" class="social__link social__link--reddit">
                 <span class="visually-hidden">Сообщество в Reddit.</span>
               </a>
             </li>
@@ -923,16 +936,6 @@
         </div>
       </div>
     </footer>
-    <!-- <div data-test="about">about</div>
-    <div data-test="price">price</div>
-    <div data-test="games">games</div>
-    <div data-test="juri">juri</div>
-    <div data-test="features">features</div>
-    <div data-test="offers">offers</div>
-    <div data-test="faq">faq</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div> -->
     <script type="module" src="js/main.js"></script>
   </body>
 
