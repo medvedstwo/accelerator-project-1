@@ -62,21 +62,32 @@
 }
 
 .games__schedule {
-  time {
-    display: grid;
-    row-gap: 5px;
+  display: grid;
+  align-self: flex-start;
+  row-gap: 5px;
 
-    @media (min-width: $vp-tablet) {
-      row-gap: 10px;
-    }
+  @media (min-width: $vp-tablet) {
+    row-gap: 10px;
+  }
 
-    @media (min-width: $vp-desktop) {
-      row-gap: 20px;
-    }
+  @media (min-width: $vp-desktop) {
+    row-gap: 20px;
   }
 }
 
-.games__date,
+.games__date {
+  display: grid;
+  row-gap: 5px;
+
+  @media (min-width: $vp-tablet) {
+    row-gap: 4px;
+  }
+
+  @media (min-width: $vp-desktop) {
+    row-gap: 12px;
+  }
+}
+
 .games__time {
   display: grid;
   row-gap: 5px;

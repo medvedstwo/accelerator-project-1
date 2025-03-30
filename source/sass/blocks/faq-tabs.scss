@@ -10,7 +10,7 @@
   display: grid;
   grid-template-columns: repeat(2, 140px);
   gap: 10px;
-  margin-bottom: 36px;
+  margin-bottom: 35px;
 
   @media (min-width: $vp-tablet) {
     grid-template-columns: repeat(4, 162px);
@@ -34,8 +34,10 @@
   color: $color-primary;
   text-align: center;
   padding: 15px;
+  width: 100%;
   outline: 1px solid rgba(16, 38, 84, 0.2);
   outline-offset: -1px;
+  cursor: pointer;
 
   &--active {
     color: $color-white;
@@ -43,7 +45,7 @@
     outline: none;
   }
 
-  @media (max-width: $vp-tablet) {
+  @media (min-width: $vp-tablet) {
     font-size: 18px;
     line-height: 18px;
     padding: 18px 0;

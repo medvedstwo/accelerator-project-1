@@ -52,7 +52,7 @@
 
 .faq__item {
   position: relative;
-  padding: 20px 0;
+  padding: 21px 0 20px;
 
   &:not(:last-child) {
     &::after {
@@ -113,15 +113,19 @@
 
 .faq__question {
   display: grid;
+  align-items: center;
   grid-template-columns: 238px 30px;
   column-gap: 22px;
-  margin-bottom: 20px;
 
   h3 {
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
     margin: 0;
+  }
+
+  &:has(.faq__button--active) {
+    margin-bottom: 20px;
   }
 
   @media (min-width: $vp-tablet) {
@@ -152,11 +156,19 @@
 
 .faq__answer {
   width: 238px;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+  opacity: 0;
 
   p {
     font-size: 16px;
     line-height: 20px;
     margin: 0;
+  }
+
+  &--active {
+    opacity: 1;
   }
 
   @media (min-width: $vp-tablet) {
